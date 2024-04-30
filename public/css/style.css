@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    overflow-x: hidden;
+}
+
+.header {
+    min-width: fit-content;
+    height: 7vh;
+    padding: 15px;
+    background: #425c5a;
+    color: #fff;
+}
+header .logo {
+    width: 230px;
+}
+header .info {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.settings {
+    z-index: 9;
+}
+
+.sidebar {
+    min-height: 88vh;
+    height: 100%;
+    flex: 1;
+    background: #425c5a;
+}
+.nav-link {
+    color: #fff !important;
+}
+.linkSidebar:hover {
+    color: #000 !important;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.searchCard {
+    width: 280px !important;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    min-height: 5vh;
+    height: 100%;
+    background: #425c5a;
+    padding: 15px;
+    color: #fff;
+}
+
+.buttonColl {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    background: #e1eceb;
+    flex: 20;
+    padding: 50px 25px;
+    padding-top: 10px;
+    overflow: auto;
+}
+.contentInfovisit {
+    background: #fff;
+    flex: 20;
+    overflow: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.logoImage {
+    height: 35px;
+    width: fit-content;
+    max-width: 60px;
+    object-fit: cover;
+}
+.avaImage {
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.editAvaImage {
+    height: 60px;
+    width: 60px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.inputFormImage {
+    height: 250px;
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+}
+.cardImage {
+    height: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.bigText {
+    font-size: 56px;
+}
+
+.smallText {
+    font-size: 12px;
+}
+
+.formContainer {
+    padding: 15px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formContainer {
+    padding: 15px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrapper {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+#formWrapper {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+.formWrapper > form {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+}
+.formWrapper .card {
+    width: 95%;
+}
+.formWrapper > form > div > a {
+    max-width: 100px;
+}
+
+.formWrapper,
+label {
+    min-width: max-content;
+}
+.formWrapper > input {
+    width: 30px;
+}
+
+.dataTables_paginate > ul > li {
+    font-size: 8px;
+}
+.dataTables_paginate a {
+    padding: 5px 9px !important;
+    font-size: 14px;
+}
+.dataTables_info {
+    font-size: 12px;
+}
+
+.dataTable > tbody > tr {
+    align-self: center;
+}
+.dataTable > tbody > tr > td {
+    padding: 4px 10px;
+}
+.dataTable > tbody > tr.even > td {
+    background: #fafafa !important;
+}
+
+.sidebarMobileCollapse {
+    display: none;
+}
+.formVisit {
+    max-width: 100%;
+}
+.cardFormDisplay {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    border: none !important;
+    border-radius: 0px !important;
+}
+.cardFormDisplay > label {
+    max-width: max-content;
+}
+
+.cardVisit {
+    margin-top: 0px;
+    border-radius: 10px;
+    padding: 30px;
+    color: #000;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    outline-style: hidden;
+    background-color: #fff;
+}
+.wrappervisit {
+    margin-top: 0px !important;
+}
+
+.wrappervisit a:active,
+.wrappervisit a:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+.visited {
+    background-color: #9dd8d2;
+}
+
+.svgBarChart:hover {
+    color: #e0b557;
+}
+
+.containerInfoVisit {
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px;
+}
+
+.boxContainer {
+    padding: 5px;
+}
+.boxContainer > span {
+    font-weight: 600;
+}
+.boxWrapper {
+    margin-top: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+.box {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    background-color: #eee;
+}
+.box p {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.box1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box1 .nama {
+    font-weight: 700;
+}
+.box2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box3 {
+    grid-column: span 6;
+    grid-row: span 5;
+}
+.box4 {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.box5 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box6 {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+.tableContainer {
+    margin-top: 25px;
+    padding: 5px;
+    max-width: 75vw;
+    min-width: fit-content;
+}
+
+.tableContainer > span {
+    font-weight: 600;
+}
+
+.mainTable {
+    margin: 10px 0;
+    font-size: 10px;
+    min-width: fit-content;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 2px;
+    border-spacing: 0 10px;
+    align-self: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.thead {
+    text-transform: uppercase;
+    color: #555;
+}
+.theadTrTh {
+    border-bottom: 3px solid #fff;
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+}
+
+.tbody > tr {
+    border-bottom: 15px solid transparent;
+}
+
+.formFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+.leftFormProfile {
+    flex: 2;
+}
+.leftForm {
+    flex: 1;
+}
+
+.rightForm {
+    flex: 1;
+}
+
+.myImg {
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.myImg:hover {
+    opacity: 0.8;
+}
+
+.modall {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modall-content {
+    margin: auto;
+    display: block;
+    height: 90%;
+    object-fit: contain;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#map {
+    width: "100%";
+    height: 400px;
+}
+.text-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 468px) {
+    .sidebarCollapse {
+        display: none;
+    }
+
+    .sidebarMobileCollapse {
+        display: block;
+    }
+
+    .sidebar {
+        flex: 0;
+    }
+
+    .header {
+        padding: 5px;
+        min-width: 100%;
+    }
+
+    header .logo {
+        width: 100px;
+    }
+    .footer {
+        margin-top: 15px;
+        padding: 20px;
+        height: 5vh;
+    }
+    .formVisit {
+        max-width: max-content !important;
+    }
+
+    .profil > span {
+        display: none;
+    }
+
+    .buttonColl {
+        left: 700px;
+    }
+
+    .content {
+        max-width: 800px;
+        padding: 15px;
+        padding-bottom: 50px;
+    }
+
+    .dataTable {
+        width: 100px;
+    }
+
+    .dataTable > thead > tr {
+        width: 500px;
+    }
+
+    .dataTable > tbody > tr > td {
+        font-size: 12px;
+        align-content: center;
+        padding: 2px 5px;
+        width: 20px;
+    }
+    .formContainer {
+        padding: 15px 5px;
+        width: 100%;
+        min-width: 90vw;
+    }
+
+    .formWrapper {
+        width: 90%;
+    }
+
+    #formContainer {
+        padding: 15px 5px;
+        width: 100%;
+        min-width: 90vw;
+    }
+
+    #formWrapper {
+        width: 90%;
+    }
+    .formWrapper .card {
+        width: 90%;
+    }
+    .formWrapper > form {
+        padding: 5px;
+    }
+    .cardFormDisplay {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .editDetail > span,
+    .editCustomer > span,
+    .deleteCustomer > span {
+        display: none;
+    }
+    .main {
+        /* overflow: scroll; */
+        overflow: unset;
+    }
+    .searchCard {
+        width: 180px !important;
+    }
+    .reserved {
+        display: none;
+    }
+
+    .boxContainer {
+        padding: 10px;
+    }
+
+    .boxWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .box2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .box3 {
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+    .box4 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .box5 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .box6 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .tableContainer {
+        padding: 10px;
+        min-width: min-content;
+    }
+
+    .mainTable {
+        overflow: auto;
+        min-height: 150px;
+        max-height: 200px;
+        min-width: max-content;
+    }
+
+    .formFlex {
+        flex-direction: column;
+    }
+    .modall-content {
+        margin: auto;
+        display: block;
+        width: 90%;
+        object-fit: contain;
+    }
+}
